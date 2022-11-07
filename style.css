@@ -1,15 +1,76 @@
 body {
-    margin: 0%;
-    background-color: beige;
+    background: #c0c0c0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    margin: 5%;
+}
+
+header {
+    background: #9c9c9c;
     text-align: center;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 h1 {
-    color: blueviolet;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0%;
+    color: rgb(255, 255, 255);
 }
 
 h2 {
-    color: blueviolet;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+	color: #545454;
+	background: #9c9c9c;
+    border-radius: 5px;
+}
+
+.half {
+	width:46%;
+	margin: 0% 2%;
+	display:inline-block;
+	float:left;
+}
+
+.whole {
+    clear: both;
+}
+
+
+nav {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    margin: 5px;
+    color: #e68414;
+}
+
+nav a {
+    background: white;
+    display: inline-block;
+    width: auto;
+    padding: 2px 15px;
+    border-radius: 10px;
+}
+
+footer {
+    font-size: 75%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background: #9c9c9c;
+    clear: both;
+}
+
+img {
+    width: 65px;
+}
+
+header, footer {
+    background: -webkit-linear-gradient(left, #f49c4a,#e68414);
+    background: -moz-linear-gradient(left, #f49c4a,#e68414);
+    background: -o-linear-gradient(left, #4a52f4,#6114e6);
+    background: linear-gradient(left, #f49c4a,#e68414);
 }
