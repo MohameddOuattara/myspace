@@ -7,62 +7,84 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,800;1,400&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="Style/style.css"> -->
 	<title>My space</title>
-  	<!-- <script>
-    	var names = []; // DO NOT REMOVE
-  	</script> -->
-	<script src="Scripts/SpeakHello.js"></script>
-	<script src="Scripts/SpeakGoodBye.js"></script>
-	<script src="Scripts/script.js"></script>
 </head>
 <body class="d-flex h-100 text-center text-bg-dark">    
-	<div class="container d-flex w-80 h-100 p-3 mx-auto flex-column">
-	<header class="mb-5">
-	  <div>
-		<h3 class="float-md-start mb-0">Cover</h3>
-		<nav class="navbar navbar-expand-lg navbar-dark float-md-end">
-			<div class="container-fluid">
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-				  <a class="nav-link" aria-current="page" href="index.html">Home</a>
-				  <a class="nav-link active" href="#">Add books</a>
-				  <a class="nav-link" href="#">More</a>
-				  <a class="nav-link" href="#">About me</a>
+	<div class="container d-flex w-80 h-100 p-3 mx-auto flex-column divMain">
+		<header class="mb-5 divMainHeaderChild BarNagation">
+			<div class="divMainHeaderChildDivChild">
+				<h3 class="float-md-start mb-0">Cover</h3>
+				<nav class="navbar navbar-expand-lg navbar-dark float-md-end">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" aria-current="page" href="index.html">Home</a>
+						<a class="nav-link active" href="#">Add books</a>
+						<a class="nav-link" href="#">More</a>
+						<a class="nav-link" href="#">About me</a>
+					</div>
+					</div>
 				</div>
-			  </div>
+				</nav>
 			</div>
-		  </nav>
-	  </div>
-	</header>
+		</header>
 
-    <section class="container col-lg-9">
-        <div class="h3">Search for à book</div>
-        <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <input class="form-control form-control-lg text-center mb-5 row-col-md-6 rounded-pill" type="text" placeholder="Type in the name of your favorites books" aria-label=".form-control-lg example">
+    <section class="DivSearch container col-lg-9">
+        <div class="h3 DivSearchH3">Search for à book</div>
+        <p class="DivSearchP">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <input class="DivSearchInput form-control form-control-lg text-center mb-5 row-col-md-6 rounded-pill" type="text" placeholder="Type in the name of your favorites books" aria-label=".form-control-lg example">
     </section>
 
-	<main class="mb-5">
-        <div class="card">
+	<main class="Books mb-5">
+        <div class="Book card mb-2">
             <div class="card-body text-dark d-flex justify-content-between align-items-center">
-                <div class="d-flex">
-                    <h5 class="card-title me-5 mb-0">Card title</h5>
-                    <p class="card-text mb-0">With supporting text below as a natural lead-in to additional content.</p>
+                <div class="d-flex text-start justify-content-around">
+                    <h5 class="bookTitle card-title mb-0 w-25 d-flex align-items-center">Card title</h5>
+                    <p class="bookDescription card-text mb-0 me-4">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-                <a href="#" class="btn btn-dark">Delete</a>
+                <a href="#" class="bookDelete btn btn-dark">Delete</a>
+            </div>
+        </div>
+		<div class="Book card mb-2">
+            <div class="card-body text-dark d-flex justify-content-between align-items-center">
+                <div class="d-flex text-start justify-content-around">
+                    <h5 class="bookTitle card-title mb-0 w-25 d-flex align-items-center">Card title</h5>
+                    <p class="bookDescription card-text mb-0 me-4">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <a href="#" class="bookDelete btn btn-dark">Delete</a>
+            </div>
+        </div>
+		<div class="Book card mb-2">
+            <div class="card-body text-dark d-flex justify-content-between align-items-center">
+                <div class="d-flex text-start justify-content-around">
+                    <h5 class="bookTitle card-title mb-0 w-25 d-flex align-items-center">Card title</h5>
+                    <p class="bookDescription card-text mb-0 me-4">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <a href="#" class="bookDelete btn btn-dark">Delete</a>
+            </div>
+        </div>
+		<div class="Book card mb-2">
+            <div class="card-body text-dark d-flex justify-content-between align-items-center">
+                <div class="d-flex text-start justify-content-around">
+                    <h5 class="bookTitle card-title mb-0 w-25 d-flex align-items-center">Card title</h5>
+                    <p class="bookDescription card-text mb-0 me-4">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <a href="#" class="bookDelete btn btn-dark">Delete</a>
             </div>
         </div>
 	</main>
 
-    <section class="container col-lg-9">
-        <input class="form-control form-control-lg text-center mb-5 row-col-md-6 rounded-pill" type="text" placeholder="Type in the name of your favorites books" aria-label=".form-control-lg example">
-        <button class="btn btn-dark text-white"> Add book</button>
+    <section class="addBook container col-lg-6 d-flex flex-column justify-content-around mb-5">
+        <input class="addBookInput form-control form-control-lg text-center row-col-md-6 rounded-pill mb-2" type="text" placeholder="Type in the name of your favorites books" aria-label=".form-control-lg example">
+        <button class="addBookBtn btn btn-lg btn-light rounded-pill"> Add book</button>
     </section>
   
 	<footer class="mt-auto text-white-50">
-	  <p>by <a href="https://twitter.com/mdo" class="text-white">&copy Mohamed Ouattara</a>.</p>
+	  <p>by <a href="https://twitter.com/mdo" class="text-white">&copy copiright - Mohamed Ouattara 2023</a>.</p>
 	</footer>
 	</div>
+	<script src="Scripts/books.js"></script>
   </body>
 </html>
