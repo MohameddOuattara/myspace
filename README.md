@@ -1,2 +1,0 @@
-# myspace
-#theme: Minima
