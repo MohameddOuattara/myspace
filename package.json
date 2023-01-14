@@ -1,0 +1,23 @@
+{
+  "name": "myspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "builder": "tailwindcss -i src/input.css -o public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohameddOuattara/myspace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohameddOuattara/myspace/issues"
+  },
+  "homepage": "https://github.com/MohameddOuattara/myspace#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
