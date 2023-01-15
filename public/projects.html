@@ -11,87 +11,116 @@
     <!-- This example requires Tailwind CSS v3.0+ -->
 <div class="isolate">
     <div class="px-6 pt-8 lg:px-16">
-      <div>
-        <nav class="flex h-9 items-center justify-between" aria-label="Global">
-          <div class="flex flex-1 lg:min-w-0" aria-label="Global">
-            <a href="index.html" class="">
-              <span class="font-bold text-xl text-gray-300 hover:text-gray-100">Mohamed Ouattara</span>
-            </a>
-          </div>
-          <div class="hidden md:flex lg:justify-between md:gap-x-10 text-sx mx-10">
-            <a href="index.html" class="font-normal text-gray-300 hover:text-gray-100">Home</a>
-            <a href="projects.html" class="font-bold text-gray-300 hover:text-gray-100">To do App</a>
-            <a href="#" class="font-normal text-gray-300 hover:text-gray-100">Contacts</a>
-            <a href="#" class="font-normal text-gray-300 hover:text-gray-100">About me</a>
-          </div>
-          
-          <div class="hidden md:flex lg:justify-end h-10">
-            <input type="text" placeholder="Search for a new task" class="hidden lg:flex md:items-center text-gray-800 mr-5 rounded-full pl-5 font-bold">
-            <a href="#" class="flex px-3 text-xs rounded-lg font-semibold text-white shadow-sm ring-1 ring-gray-600 hover:ring-gray-100 hover:text-gray-900 hover:bg-gray-100  border-2 text-center items-center">Contact me</a>
-          </div>
-        </nav>
-
-        <!-- MOBILE MENU - START -->
-
-        <!-- MOBILE MENU - END -->
-        
-    
-    <!-- MAIN CONTENT - BANNER -->
-    <header>
-        <div class="flex justify-center text-center px-6">
-            <div class="mx-auto max-w-3xl pt-16 pb-10 text-white">
-                <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-3xl">My to do App</h1>
-                <p class="mt-2 text-lg leading-6 text-center">This App allow you to add, remove and search task.</p> 
-            </div>
-        </div>
-    </header>
-
-    <!-- ADD BOOK -->
-    <section class="hidden sm:flex justify-center mb-5"> <!-- ADD BOOK DESKTOP -->
-        <div class="flex justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
-            <input placeholder="Add a new task here" type="text" class="rounded-full grow text-gray-800 mb-5 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
-            <button class="flex justify-center items-center px-5 bg-gray-900 rounded-full text-white grow h-12">
-                <span>Add a book</span>
-                <span class="ml-2 material-symbols-outlined">book</span>
-            </button>
-        </div>
-    </section>
-
-    <section class="visible sm:hidden justify-center mb-5"> <!-- ADD BOOK MOBILE-->
-        <div class="flex flex-col sm:flex-row justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
-            <input placeholder="Add a new task here" type="text" class="rounded-full grow text-gray-800 mb-3 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
-            <button class="flex justify-center items-center px-5 bg-gray-900 rounded-full text-white grow h-12">
-                <span>Add a book</span>
-                <span class="ml-2 material-symbols-outlined">book</span>
-            </button>
-        </div>
-    </section>
-    <!-- ADD BOOK -->
-
-
-    <!-- MAIN CONTENT - SECTION -->
-    <main class="blocPrincipal">
-        <div class="w-12/12 sm:w-8/12 bg-gray-700 rounded-xl mx-auto p-2">
-            <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
-                <div class="flex items-center">
-                    <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-5"></div>
-                    <h1 class="grow pl-1 text-lg">Task name</h1>
-                    <button class="btnDelete">
-                        <span class="px-5 material-symbols-outlined">delete</span>
-                    </button>
+        <div>
+            <nav class="flex h-9 items-center justify-between" aria-label="Global">
+                <div class="flex flex-1 lg:min-w-0" aria-label="Global">
+                    <a href="index.html" class="">
+                        <span class="font-bold text-xl text-gray-300 hover:text-gray-100">Mohamed Ouattara</span>
+                    </a>
                 </div>
+                <div class="hidden md:flex lg:justify-between md:gap-x-10 text-sx mx-10">
+                    <a href="index.html" class="font-normal text-gray-300 hover:text-gray-100">Home</a>
+                    <a href="projects.html" class="font-bold text-gray-300 hover:text-gray-100">To do App</a>
+                    <a href="#" class="font-normal text-gray-300 hover:text-gray-100">Contacts</a>
+                    <a href="#" class="font-normal text-gray-300 hover:text-gray-100">About me</a>
+                </div>
+                
+                <div class="hidden md:flex lg:justify-end h-10">
+                    <input type="text" placeholder="Search for a new task" class="hidden lg:flex md:items-center text-gray-800 mr-5 rounded-full pl-5 font-bold">
+                    <a href="#" class="flex px-3 text-xs rounded-lg font-semibold text-white shadow-sm ring-1 ring-gray-600 hover:ring-gray-100 hover:text-gray-900 hover:bg-gray-100  border-2 text-center items-center">Contact me</a>
+                </div>
+            </nav>
+
+            <!-- MOBILE MENU - START -->
+
+            <!-- MOBILE MENU - END -->
+
+
+            <!-- MAIN CONTENT - BANNER -->
+            <header>
+            <div class="flex justify-center text-center px-6">
+                <div class="mx-auto max-w-3xl pt-16 pb-10 text-white">
+                    <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-3xl">My to do App</h1>
+                    <p class="mt-2 text-lg leading-6 text-center">This App allow you to add, remove and search task.</p> 
+                </div>
+            </div>
+            </header>
+
+            <!-- ADD BOOK -->
+            <section class="hidden sm:flex justify-center mb-5"> <!-- ADD BOOK DESKTOP -->
+            <div class="flex justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
+                <input placeholder="Add a new task here" type="text" class="rounded-full grow text-gray-800 mb-5 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
+                <button class="flex justify-center items-center px-5 bg-gray-900 rounded-full text-white grow h-12">
+                    <span>Add a book</span>
+                    <span class="ml-2 material-symbols-outlined">book</span>
+                </button>
+            </div>
             </section>
+
+            <section class="visible sm:hidden justify-center mb-5"> <!-- ADD BOOK MOBILE-->
+            <div class="flex flex-col sm:flex-row justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
+                <input placeholder="Add a new task here" type="text" class="rounded-full grow text-gray-800 mb-3 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
+                <button class="flex justify-center items-center px-5 bg-gray-900 rounded-full text-white grow h-12">
+                    <span>Add a book</span>
+                    <span class="ml-2 material-symbols-outlined">book</span>
+                </button>
+            </div>
+            </section>
+            <!-- ADD BOOK -->
+
+
+            <!-- MAIN CONTENT - SECTION TASK CARD -->
+            <main class="blocPrincipal">
+            <div class="flex flex-row sm:flex-col sm:gap-y-2 mainParent w-12/12 sm:w-8/12 bg-gray-700 rounded-xl mx-auto p-2">
+                <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                    <div class="flex items-center">
+                        <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-5"></div>
+                        <h1 class="grow pl-1 text-lg">Task name</h1>
+                        <button>
+                            <span class="btnDelete px-5 material-symbols-outlined">delete</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                    <div class="flex items-center">
+                        <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-5"></div>
+                        <h1 class="grow pl-1 text-lg">Task name</h1>
+                        <button>
+                            <span class="btnDelete px-5 material-symbols-outlined">delete</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                    <div class="flex items-center">
+                        <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-5"></div>
+                        <h1 class="grow pl-1 text-lg">Task name</h1>
+                        <button>
+                            <span class="btnDelete px-5 material-symbols-outlined">delete</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                    <div class="flex items-center">
+                        <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-5"></div>
+                        <h1 class="grow pl-1 text-lg">Task name</h1>
+                        <button>
+                            <span class="btnDelete px-5 material-symbols-outlined">delete</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+            </main>
+
+            <footer class="text-white text-center mt-10">
+            <p>
+                Design by <span class="font-bold">Mohamed Ouattara</span> &copy; Copyright 2023
+            </p>
+            <span class="text-gray-500 text-center">Côte d'ivoire, Abidjan, Cocody Rivera 2</span>
+            </footer>
+
         </div>
-    </main>
-
-    <footer class="text-white text-center mt-10">
-        <p>
-            Design by <span class="font-bold">Mohamed Ouattara</span> &copy; Copyright 2023
-        </p>
-        <span class="text-gray-500 text-center">Côte d'ivoire, Abidjan, Cocody Rivera 2</span>
-    </footer>
-
-  </div>
+    </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
