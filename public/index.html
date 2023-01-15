@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>My univers</title>
+</head>
+<body class="bg-gray-800">
+    <!-- This example requires Tailwind CSS v3.0+ -->
+<div class="isolate">
+    <div class="px-6 pt-8 lg:px-16">
+      <div>
+        <nav class="flex h-9 items-center justify-between" aria-label="Global">
+          <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
+            <a href="index.html" class="-m-1.5 p-1.5">
+              <span class="font-bold text-xl text-gray-300 hover:text-gray-100">Mohamed Ouattara</span>
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <!-- Heroicon name: outline/bars-3 -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
+            <a href="index.html" class="font-normal text-gray-300 hover:text-gray-100">Home</a>
+            <a href="projects.html" class="font-normal text-gray-300 hover:text-gray-100">To do App</a>
+            <a href="#" class="font-normal text-gray-300 hover:text-gray-100">Contacts</a>
+            <a href="#" class="font-normal text-gray-300 hover:text-gray-100">About me</a>
+          </div>
+          <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+            <a href="#" class="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm ring-1 ring-gray-600 hover:ring-gray-100 hover:text-gray-900 hover:bg-gray-100  border-2">Contact me</a>
+          </div>
+        </nav>
+
+        <!-- MOBILE MENU, SHOW/HIDE based BASE ON MENU OPEN STATE -->
+        <div role="dialog" aria-modal="true">
+          <div focus="true" class="fixed inset-0 z-10 overflow-y-auto bg-gray-800 px-6 py-6 lg:hidden">
+            <div class="flex h-9 items-center justify-between">
+              <div class="flex text-gray-300 hover:text-gray-100">
+                <a href="index.html" class="-m-1.5 p-1.5">
+                  <span class="font-bold text-xl">Mohamed Ouattara</span>
+                </a>
+              </div>
+              <div class="flex">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: outline/x-mark - CLOSE MENU ICON -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="index.html" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-300 hover:text-gray-100 hover:bg-gray-700">Home</a>
+                  <a href="projects.html" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-300 hover:text-gray-100 hover:bg-gray-700">To do App</a>
+                  <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-300 hover:text-gray-100 hover:bg-gray-700">Project</a>
+                  <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-300 hover:text-gray-100 hover:bg-gray-700">About me</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-300 hover:text-gray-800 text-center hover:bg-white">Contact me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MAIN CONTENT - BANNER -->
+    <main>
+      <div class="relative px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40 text-white">
+          <div>
+            <div>
+              <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">My Projects Univers Online</h1>
+              <p class="mt-6 text-lg leading-8 sm:text-center">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+              <div class="mt-8 flex gap-x-4 sm:justify-center">
+                <a href="projects.html" class="hover:text-white inline-block rounded-lg px-4 py-1.5 text-base  font-bold leading-7 shadow-sm text-center text-gray-800 bg-white hover:bg-gray-900">Projects</a>
+                <a href="#" class="inline-block rounded-lg px-4 py-1.5 text-base leading-7 text-white hover:bg-white hover:text-gray-800 border-2">Contact me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-white text-center">
+        <p>
+            Design by <span class="font-bold">Mohamed Ouattara</span> &copy; Copyright 2023
+        </p>
+        <span class="text-gray-500 text-center">Côte d'ivoire, Abidjan, Cocody Rivera 2</span>
+    </footer>
+
+  </div>  
+</body>
+</html>
