@@ -2,7 +2,8 @@ let blocPrincipal = document.querySelector('.blocPrincipal');
 let mainParent = document.querySelectorAll('.mainParent');
 let taskCard = document.querySelectorAll('.taskCard');
 let btnDelete = document.querySelectorAll('.btnDelete');
-
+let addBook = document.querySelectorAll('.addBook');
+let addBookInput = document.querySelectorAll('.addBookInput');
 
 taskCard.forEach((task) => {
     task.addEventListener('click', function(e) {
@@ -15,9 +16,11 @@ taskCard.forEach((task) => {
         }
     })
 })
-console.log(blocPrincipal.innerText);
 
-if (blocPrincipal.innerText < 'Task name delete') {
-    console.log(blocPrincipal);
-    document.querySelector('.isolate').removeChild(blocPrincipal);
-}
+addBook.forEach(function(search){
+    console.log(search);
+})
+
+addBookInput.forEach(function(text){
+    console.log(text);
+})
