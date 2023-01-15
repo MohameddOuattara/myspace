@@ -39,7 +39,7 @@
     <!-- MAIN CONTENT - BANNER -->
     <header>
         <div class="flex justify-center text-center px-6">
-            <div class="mx-auto max-w-3xl pt-10 pb-32 text-white">
+            <div class="mx-auto max-w-3xl pt-16 pb-10 text-white">
                 <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-3xl">My to do App</h1>
                 <p class="mt-2 text-lg leading-6 text-center">This App allow you to add, remove and search task.</p> 
             </div>
@@ -47,10 +47,20 @@
     </header>
 
     <!-- ADD BOOK -->
-    <section class="flex justify-center mb-5 border-2">
-        <div class="flex flex-row justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12 border-2 h-12">
-            <input placeholder="Add a new task here" type="text" class="rounded-full grow lg:mr-10 text-gray-800 mr-5 pl-6 font-bold">
-            <button class="flex justify-between items-center px-5 bg-gray-900 rounded-full text-white">
+    <section class="hidden sm:flex justify-center mb-5"> <!-- ADD BOOK DESKTOP -->
+        <div class="flex justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
+            <input placeholder="Add a new task here" type="text" class="rounded-full grow text-gray-800 mb-5 sm:mb-0 sm:mr-10 pl-6 font-bold h-10">
+            <button class="flex justify-between items-center px-5 bg-gray-900 rounded-full text-white grow h-10">
+                <span>Add a book</span>
+                <span class="material-symbols-outlined">book</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="visible sm:hidden justify-center mb-5"> <!-- ADD BOOK MOBILE-->
+        <div class="flex flex-col sm:flex-row justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
+            <input placeholder="Add a new task here" type="text" class="rounded-full grow text-gray-800 mb-2 sm:mb-0 sm:mr-10 pl-6 font-bold h-10">
+            <button class="flex justify-between items-center px-5 bg-gray-900 rounded-full text-white grow h-10">
                 <span>Add a book</span>
                 <span class="material-symbols-outlined">book</span>
             </button>
