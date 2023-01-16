@@ -2,8 +2,8 @@ let blocPrincipal = document.querySelector('.blocPrincipal');
 let mainParent = document.querySelectorAll('.mainParent');
 let taskCard = document.querySelectorAll('.taskCard');
 let btnDelete = document.querySelectorAll('.btnDelete');
-let addBook = document.querySelectorAll('.addBook');
-let addBookInput = document.querySelectorAll('.addBookInput');
+let addTaskForms = document.forms;
+let addTaskInput = document.querySelectorAll('.addBookInput');
 
 taskCard.forEach((task) => {
     task.addEventListener('click', function(e) {
@@ -17,10 +17,9 @@ taskCard.forEach((task) => {
     })
 })
 
-addBook.forEach(function(search){
-    console.log(search);
-})
-
-addBookInput.forEach(function(text){
-    console.log(text);
+console.log(addTaskForms[1]);
+addTaskForms[1].addEventListener('submit', function(e){
+    e.preventDefault();
+    let taskTitle = addTaskForms[1].querySelector('input').value;
+    console.log(taskTitle);
 })
