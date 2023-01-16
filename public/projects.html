@@ -46,66 +46,66 @@
             </div>
             </header>
             <!-- ADD BOOK -START -->
-            <section class="addBook hidden sm:flex justify-center mb-5"> <!-- ADD BOOK DESKTOP -->
+            <div class="addBook hidden sm:flex justify-center mb-5"> <!-- ADD BOOK DESKTOP -->
             <form class="flex justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
-                <input placeholder="Add a new task here" type="text" class="addBookInput rounded-full grow text-gray-800 mb-5 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
+                <input placeholder="Add a new task here" type="text" class="addTaskInput rounded-full grow text-gray-800 mb-5 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
                 <button class="flex justify-center items-center px-5 bg-gray-900 rounded-full text-white grow h-12">
                     <span>Add a book</span>
                     <span class="ml-2 material-symbols-outlined">book</span>
                 </button>
             </form>
-            </section>
+            </div>
 
-            <section class="addBook visible sm:hidden justify-center mb-5"> <!-- ADD BOOK MOBILE-->
+            <div class="addBook visible sm:hidden justify-center mb-5"> <!-- ADD BOOK MOBILE-->
                 <form class="flex flex-col sm:flex-row justify-between xl:w-6/12 lg:w-8/12 md:w-10/12 sm:w-11/12">
-                    <input placeholder="Add a new task here" type="text" class="addBookInput rounded-full grow text-gray-800 mb-3 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
+                    <input placeholder="Add a new task here" type="text" class="addTaskInput rounded-full grow text-gray-800 mb-3 sm:mb-0 sm:mr-10 pl-6 font-bold h-12">
                     <button class="flex justify-center items-center px-5 bg-gray-900 rounded-full text-white grow h-12">
                         <span>Add a book</span>
                         <span class="ml-2 material-symbols-outlined">book</span>
                     </button>
                 </form>
-            </section>
+            </div>
             <!-- ADD BOOK - END -->
 
             <!-- MAIN CONTENT - SECTION TASK CARD -->
             <main class="blocPrincipal">
-                <div class="flex flex-col sm:flex-col gap-y-2 mainParent w-12/12 sm:w-8/12 bg-gray-700 rounded-xl mx-auto p-2">
-                    <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                <div id="mainParent" class="flex flex-col sm:flex-col gap-y-2 w-12/12 sm:w-8/12 bg-gray-700 rounded-xl mx-auto p-2">
+                    <div class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
                         <div class="flex items-center">
-                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-1"></div>
+                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here"></div>
                             <h1 class="grow pl-1 text-lg">Googee</h1>
                             <button>
                                 <span class="btnDelete px-5 material-symbols-outlined">delete</span>
                             </button>
                         </div>
-                    </section>
-                    <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                    </div>
+                    <div class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
                         <div class="flex items-center">
-                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-1"></div>
+                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here"></div>
                             <h1 class="grow pl-1 text-lg">Progistack</h1>
                             <button>
                                 <span class="btnDelete px-5 material-symbols-outlined">delete</span>
                             </button>
                         </div>
-                    </section>
-                    <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                    </div>
+                    <div class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
                         <div class="flex items-center">
-                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-1"></div>
+                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here"></div>
                             <h1 class="grow pl-1 text-lg">Matar shop</h1>
                             <button>
                                 <span class="btnDelete px-5 material-symbols-outlined">delete</span>
                             </button>
                         </div>
-                    </section>
-                    <section class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
+                    </div>
+                    <div class="taskCard grid gap-4 rounded-xl bg-gray-900 text-white">
                         <div class="flex items-center">
-                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here" class="checked:bg-red-500 p-1"></div>
+                            <div class="flex w-max p-5"><input type="checkbox" placeholder="Add a new task here"></div>
                             <h1 class="grow pl-1 text-lg">Mediano</h1>
                             <button>
                                 <span class="btnDelete px-5 material-symbols-outlined">delete</span>
                             </button>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </main>
 
@@ -119,6 +119,6 @@
         </div>
     </div>
 </div>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
